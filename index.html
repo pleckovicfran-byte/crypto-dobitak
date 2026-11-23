@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Čestitamo – Veliki investicijski dobitak</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 15px;
+    background: #101827;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 540px;
+    margin: auto;
+}
+
+.simulation {
+    background: #493b12;
+    color: #ffdc70;
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #a88b32;
+    border-radius: 9px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.header {
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 27px;
+    line-height: 1.3;
+    margin: 0 0 12px;
+}
+
+.subtitle {
+    color: #bdc7d6;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.prize {
+    background: linear-gradient(135deg, #173d36, #1c293b);
+    border: 1px solid #317e66;
+    border-radius: 14px;
+    padding: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.prize-label {
+    color: #a9d9c8;
+    font-size: 13px;
+}
+
+.prize-amount {
+    font-size: 39px;
+    font-weight: bold;
+    color: #70e3b5;
+    margin-top: 10px;
+}
+
+.card {
+    background: #1c293b;
+    border: 1px solid #34445a;
+    border-radius: 12px;
+    padding: 17px;
+    margin-top: 15px;
+}
+
+.coin-name {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.address {
+    background: #111b29;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    word-break: break-all;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
+    background: #2878e5;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.deposit {
+    background: #1c293b;
+    border: 1px solid #34445a;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.deposit-amount {
+    font-size: 30px;
+    font-weight: bold;
+    color: #70b6ff;
+    margin: 12px 0;
+}
+
+.info {
+    background: #1c293b;
+    border: 1px solid #34445a;
+    border-radius: 12px;
+    padding: 18px;
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #d2dbe7;
+    font-size: 14px;
+}
+
+.telegram {
+    color: #55aaff;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    color: #8391a5;
+    font-size: 11px;
+    margin-top: 25px;
+    line-height: 1.7;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="simulation">
+Čestitamo na nevjerovatnih 945.56€!
+</div>
+
+<div class="header">
+<div class="icon">🎉</div>
+
+<h1>Čestitamo! Ostvarili ste dobitak!</h1>
+
+<p class="subtitle">
+Vaše ranije kripto investiranje ostvarilo je financijski rezultat. U nastavku možete pogledati detalje postupka.
+</p>
+</div>
+
+<div class="prize">
+<div class="prize-label">VAŠ DOBITAK</div>
+<div class="prize-amount">945,56 €</div>
+</div>
+
+<div class="deposit">
+<strong>DEPOZIT</strong>
+<div class="deposit-amount">9,45 €</div>
+<p class="subtitle">
+Iznos od 1% (9.45€) pošaljite na jednu od ovih kripto adresa. Taj mali iznos od 1% služi nam za transakcijske naknade.
+</p>
+</div>
+
+<h2 style="font-size:19px;margin-top:30px;">
+Kriptovalute
+</h2>
+
+<p class="subtitle">
+Odaberite jednu od navedenih kriptovaluta kako biste vidjeli njezinu adresu.
+</p>
+
+<div id="wallets"></div>
+
+<div class="info">
+<strong>SLJEDEĆI KORAK </strong>
+
+<br><br>
+
+Nakon što uplatite iznos od 1% molimo da se javite našem osoblju na na e-mail
+
+<br><br>
+
+Kontakt osoblja:
+<br>
+<span class="e-mail">cryptowithdraw@tutamail.com</span>
+
+<br><br>
+
+Predviđeno vrijeme isplate u: <strong> 120 minuta</strong> nakon javljanja.
+</div>
+
+<div class="simulation" style="margin-top:20px;">
+Rok uplate - 72 sata
+<br>
+Novac pošaljite na jednu od kritpo adresa
+</div>
+
+<div class="footer">
+Crypto withdrawals - since 2019.
+</div>
+
+</div>
+
+<script>
+const wallets = [
+    {
+        name: "Bitcoin (BTC)",
+        address: "bc1qpurft469fgqcpdw8q65ygx6vwfr9qcm860uw3w"
+    },
+    {
+        name: "Ethereum (ETH)",
+        address: "0xC2543531d4ba17773f1BdE4509EE50D7904301A1"
+    },
+    {
+        name: "Solana (SOL)",
+        address: "BtYK5StoFfAmzx48kZyhqmf514ED3KXneFpW2QZDQ5Y1"
+    },
+    {
+        name: "Tron (TRX)",
+        address: "TLrf6y8wJN6nkW1R1pa6PxZxg8RzqU3Dn"
+    },
+    {
+        name: "Polygon (POL)",
+        address: "0xC2543531d4ba17773f1BdE4509EE50D7904301A1"
+    }
+];
+
+const container = document.getElementById("wallets");
+
+wallets.forEach(wallet => {
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const title = document.createElement("div");
+    title.className = "coin-name";
+    title.textContent = wallet.name + " – <---";
+
+    const address = document.createElement("div");
+    address.className = "address";
+    address.textContent = wallet.address;
+
+    const button = document.createElement("button");
+    button.textContent = "Copy adrese";
+
+    button.addEventListener("click", async () => {
+        try {
+            await navigator.clipboard.writeText(wallet.address);
+            button.textContent = "Copied! ✓";
+            setTimeout(() => {
+                button.textContent = "Copy adrese";
+            }, 2000);
+        } catch (error) {
+            button.textContent = "Kopiranje nije dostupno";
+        }
+    });
+
+    card.appendChild(title);
+    card.appendChild(address);
+    card.appendChild(button);
+
+    container.appendChild(card);
+});
+</script>
+
+</body>
+</html>
